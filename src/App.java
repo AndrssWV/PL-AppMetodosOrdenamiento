@@ -6,15 +6,13 @@ public class App {
         while (resume) {
             printOptions();
             int option = getOption();
-            boolean order = getOrder();
-            boolean steps = getSteps();
-
             if (option==5) {
                 System.out.println("Goodbye... ");
                 resume = false;
                 break;
             }
-            
+            boolean order = getOrder();
+            boolean steps = getSteps();
             int[] arreglo = { 12, -7, 25, 0, -15, 33, 19, -22, 5, 48, -3, 27, -30, 14, 7, -1, 41, 20, -11, 8 };
             switch (option) {
                 case 1:
